@@ -12,7 +12,7 @@ async function handler(event, context) {
       headers: {
         "content-type": 'text/plain',
       },
-      body: result,
+      body: JSON.stringify(result),
     };
   } catch (error) {
     return {
