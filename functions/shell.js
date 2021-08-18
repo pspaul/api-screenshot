@@ -2,6 +2,7 @@ const { builder } = require("@netlify/functions");
 
 async function handler(event, context) {
   // e.g. /https%3A%2F%2Fwww.11ty.dev%2F/small/1:1/smaller/
+  console.log(event);
   let cmd = event.queryStringParameters.cmd || '1337';
   
   
